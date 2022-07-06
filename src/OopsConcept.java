@@ -4,7 +4,7 @@
 //Class: Collection ob onject is called class. It is logical entity (Logical entities represent "things" consumed or produced by logical activities)
 //A class can also be defined as  a blueprint from which we can create an individual object. Class doesn't consume any space.
 // A class in java can contain : fields, methods, constructors, blocks, Nested class and interface
-class OopsConcept1{
+class OopsConcept1 {
     int id = 274293;
     String name = "Raman Ranjan";
 }
@@ -63,10 +63,11 @@ class OopsConcept2 {
     }
 }
 
-class Emp{
+class Emp {
     float salary = 200000;
 }
-class Programmer extends Emp{
+
+class Programmer extends Emp {
     int bonus = 300000;
 
     public static void main(String[] args) {
@@ -77,17 +78,19 @@ class Programmer extends Emp{
 }
 
 //Single Inheritance : When a class inherits another class, it is known as single inheritance.
-class Animal{
-    void eat(){
+class Animal {
+    void eat() {
         System.out.println("eating");
     }
 }
-class Dog extends Animal{
-    void bark(){
+
+class Dog extends Animal {
+    void bark() {
         System.out.println("barking");
     }
 }
-class Inherit{
+
+class Inherit {
     public static void main(String[] args) {
         Dog d = new Dog();
         d.bark();
@@ -96,12 +99,13 @@ class Inherit{
 }
 
 //multilevel inheritance : When there is a chain of inheritance. it is known as multilevel inheritance.
-class BabyDog extends Dog{
-    void weep(){
+class BabyDog extends Dog {
+    void weep() {
         System.out.println("Weeping");
     }
 }
-class MultiInherit{
+
+class MultiInherit {
     public static void main(String[] args) {
         BabyDog d = new BabyDog();
         d.weep();
@@ -111,12 +115,13 @@ class MultiInherit{
 }
 
 //hierarchical inheritance : When two or more classes inherits a single class, it is known as hierarchical inheritance.
-class Cat extends Animal{
-    void meow(){
+class Cat extends Animal {
+    void meow() {
         System.out.println("meowing");
     }
 }
-class HierarchicalInherit{
+
+class HierarchicalInherit {
     public static void main(String[] args) {
         Cat c = new Cat();
         c.meow();
@@ -126,31 +131,32 @@ class HierarchicalInherit{
 
 //Runtime polymorphism or Dynamic Dispatch method is a process in which a call to an overridden method is resolved at runtime rather than compile time.
 class Bank {
-    float getRateOfInterest(){
+    float getRateOfInterest() {
         return 0;
     }
 }
-class Hdfc extends Bank{
-    float getRateOfInterest(){
+
+class Hdfc extends Bank {
+    float getRateOfInterest() {
         return 8.4f;
     }
 }
 
-class Kotak extends Bank{
+class Kotak extends Bank {
     @Override
     float getRateOfInterest() {
         return 7.3f;
     }
 }
 
-class Sbi extends Bank{
+class Sbi extends Bank {
     @Override
     float getRateOfInterest() {
         return 9.1f;
     }
 }
 
-class Poly{
+class Poly {
     public static void main(String[] args) {
         Bank b;
         b = new Sbi();
@@ -164,10 +170,11 @@ class Poly{
 
 //Abstraction through abstract class
 
-abstract class Bike{
+abstract class Bike {
     abstract void run();
 }
-class Kawasaki extends Bike{
+
+class Kawasaki extends Bike {
     @Override
     void run() {
         System.out.println("running safe");
@@ -179,18 +186,19 @@ class Kawasaki extends Bike{
     }
 }
 
-abstract class Shape{
+abstract class Shape {
     abstract void draw();
 }
 
 //In real scenario, implementation is provided by others i.e unknown by end user
-class Rectangle extends Shape{
+class Rectangle extends Shape {
     @Override
     void draw() {
         System.out.println("Drawing Rectangle");
     }
 }
-class Circle extends Shape{
+
+class Circle extends Shape {
     @Override
     void draw() {
         System.out.println("drawing circle");
@@ -198,7 +206,7 @@ class Circle extends Shape{
 }
 // In real Scenario method is called by programmer or user
 
-class Abstraction{
+class Abstraction {
     public static void main(String[] args) {
         Shape s = new Circle();
         s.draw();
@@ -210,7 +218,7 @@ class Abstraction{
 // A Account class which is fully encapsulated class.
 //it has private data members and getter and setter methods
 
-class Account{
+class Account {
     //private data members
     private long acc_no;
     private String name, email;
@@ -249,7 +257,7 @@ class Account{
 
 // A java class to test the encapsulated class Account
 
-public class OopsConcept{
+public class OopsConcept {
     public static void main(String[] args) {
         //creating instance of Account class
         Account acc = new Account();

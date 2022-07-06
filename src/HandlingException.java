@@ -29,10 +29,10 @@ import java.nio.file.AccessDeniedException;
 public class HandlingException {
     public static void main(String[] args) {
         try {
-            int data = 100/0; // may throw exception
+            int data = 100 / 0; // may throw exception
         }
         // handling the exception
-        catch (ArithmeticException exception){
+        catch (ArithmeticException exception) {
             System.out.println(exception);
         }
         System.out.println("rest");
@@ -44,15 +44,15 @@ public class HandlingException {
 //** Finally block in Java can be used to put "cleanup" code such as closing a file, closing connection, etc.
 // The important statements to be printed can be placed in the finally block
 
-class FinallySh{
+class FinallySh {
     public static void main(String[] args) {
         try {
             //below code o not throw any exception
-            int data = 500/5;
+            int data = 500 / 5;
             System.out.println(data);
         }
         //catch wont be executed
-        catch (NullPointerException exception){
+        catch (NullPointerException exception) {
             System.out.println(exception);
         }
         //executed regardless of exception occurred or not
@@ -69,7 +69,7 @@ class FinallySh{
 // finally is the block in Exception Handling
 // finalize is the method of object class
 
-class Finalize{
+class Finalize {
     public static void main(String[] args) {
         Finalize obj = new Finalize();
         //printing the hashcode
@@ -79,8 +79,11 @@ class Finalize{
         System.gc();
         System.out.println("End - garbage collector");
     }
+
     //defining the finalize method
-    protected void finalize{
+    protected void finalize
+
+    {
         System.out.println("finalize method is called");
     }
 }
@@ -93,17 +96,17 @@ class Finalize{
 
 // throwing an unchecked Exception
 
-class Unchecked{
+class Unchecked {
     //function to check if a person is eligible for employment or not
-    public static void validate(int percentage){
-        if(percentage<60){
+    public static void validate(int percentage) {
+        if (percentage < 60) {
             // throw exception if not eligible to vote
             throw new ArithmeticException("Person is not eligible for employment!!");
-        }
-        else {
+        } else {
             System.out.println("Person is eligible for employment!!!");
         }
     }
+
     // main method:
     public static void main(String[] args) {
         //calling the function
@@ -114,20 +117,20 @@ class Unchecked{
 
 //throwing a checked Exception
 
-class Checked{
+class Checked {
     //function to check if person is eligible to vote or not
-    public static void method() throws FileNotFoundException{
+    public static void method() throws FileNotFoundException {
         FileReader file = new FileReader("C:\\Users\\rara274293\\Desktop\\Git tut\\Syllabus for Java.docx");
         BufferedReader fileInput = new BufferedReader(file);
 
         throw new FileNotFoundException();
     }
+
     //main method
     public static void main(String[] args) {
-        try{
+        try {
             method();
-        }
-        catch (FileNotFoundException exception){
+        } catch (FileNotFoundException exception) {
             exception.printStackTrace();
         }
         System.out.println("rest in peace.........");
@@ -140,20 +143,20 @@ class Checked{
 // exception is everything else under the Throwable class.
 
 // class represents user defined exception
-class ShiwamDefinedException extends Exception{
-    public ShiwamDefinedException(String str){
+class ShiwamDefinedException extends Exception {
+    public ShiwamDefinedException(String str) {
         //calling constructor of parent Exception
         super(str);
     }
 }
+
 //class that uses above MyException
-class ThrowException{
+class ThrowException {
     public static void main(String[] args) {
         try {
             //throw an object of user defined exception
             throw new ShiwamDefinedException("Altruistic");
-        }
-        catch (ShiwamDefinedException sde){
+        } catch (ShiwamDefinedException sde) {
             System.out.println("Caught the loop - hole");
             //print the message from MyException Object
             System.out.println(sde.getMessage());

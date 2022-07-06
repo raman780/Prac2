@@ -1,4 +1,5 @@
 import java.lang.reflect.*;
+
 // class whose object is to be created
 class Reflection {
 
@@ -8,14 +9,14 @@ class Reflection {
     //constructor of this class
     //constructor 1
     //public constructor
-    public Reflection(){
+    public Reflection() {
         s = "RamanRanjan";
     }
 
     //constructor 2
     //public
     //no arguments
-    public void method(){
+    public void method() {
         System.out.println("The string is " + s);
     }
 
@@ -23,18 +24,18 @@ class Reflection {
     //int as argument
     //public
 
-    public void method1(int n){
+    public void method1(int n) {
         System.out.println("the number is " + n);
     }
 
     // constructor 4
     //private method
-    private void method2(){
+    private void method2() {
         System.out.println("Private method invoked");
     }
 }
 //main class
 
-class Test{
+class Test {
 
 }

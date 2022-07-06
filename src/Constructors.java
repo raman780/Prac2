@@ -18,8 +18,9 @@
 public class Constructors {
     int id;
     String name;
+
     //method to display the value of id and name
-    void display(){
+    void display() {
         System.out.println(id + " " + name);
     }
 
@@ -40,17 +41,18 @@ public class Constructors {
 // A constructor which has specific number of parameters is called a parameterized constructor.
 // the parameterized constructor is used to provide different values to distinct objects. We can also provide the same values.
 //parameterized constructor
-class Employee{
+class Employee {
     int id;
     String name;
 
     //creating a parameterized constructor
-    Employee(int i, String n){
+    Employee(int i, String n) {
         id = i;
         name = n;
     }
+
     //method to display the values
-    void display(){
+    void display() {
         System.out.println("Emp id" + id + " " + "emp name" + name);
     }
 

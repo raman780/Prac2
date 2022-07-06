@@ -24,7 +24,7 @@ import java.util.Scanner;
 public class Methods {
 }
 
-class EvenOdd{
+class EvenOdd {
     public static void main(String[] args) {
         //scanner class object
         Scanner scan = new Scanner(System.in);
@@ -34,25 +34,27 @@ class EvenOdd{
         //method calling
         findEvenOdd(num);
     }
+
     public static void findEvenOdd(int num) {
         //method body
-        if (num % 2 == 0){
+        if (num % 2 == 0) {
             System.out.println(num + " is even");
-    } else {
+        } else {
             System.out.println(num + " is odd");
         }
-}
+    }
 }
 
 //static method : A method that has static keyword is known as static method. in other words, a method that belongs to a class rather than an instance of a class is known as a static method.
 // we can also create a static method by using the keyword static before the method name.
 // main advantage of static method is that we can call it without creating an object. It can access static data members and also change the value of it. it is used to create an instance method. Ex: main() method
 
-class Display{
+class Display {
     public static void main(String[] args) {
         show();
     }
-    static void show(){
+
+    static void show() {
         System.out.println("Ex of static method show() ");
     }
 }
@@ -60,16 +62,18 @@ class Display{
 ///instance method : the method of the class is known as an instance method. it is a non -static method defined in the class.
 // before calling or invoking the instance method, it is necessary to create an object of its class.
 
-class InstanceMthd{
+class InstanceMthd {
     public static void main(String[] args) {
         //creating an object of the class
         InstanceMthd obj = new InstanceMthd();
         //invoking instance method
         System.out.println(" the sum is " + obj.add(25, 73));
     }
+
     int s;
+
     //user defined method
-    public int add(int a, int b){
+    public int add(int a, int b) {
         s = a + b;
         //returning the sum
         return s;

@@ -26,15 +26,15 @@ public class FileHandling {
 
         //Reading a file
         File mFile = new File("Employee.txt");
-        try{
-        Scanner sc = new Scanner(mFile);
-        while(sc.hasNextLine()) {
-            String line = sc.nextLine();
-            System.out.println(line);
-        }
-        }catch (FileNotFoundException e){
+        try {
+            Scanner sc = new Scanner(mFile);
+            while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+                System.out.println(line);
+            }
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        }
     }
+}
 //}
