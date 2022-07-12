@@ -1,3 +1,6 @@
+//Synchronization in Java is the capability to the control the access of multiple threads to nay shared resource .
+//Java Synzhronization is better option where we want to follow only one thread to access tje shared res
+
 import java.io.*;
 import java.util.*;
 
@@ -10,12 +13,12 @@ class Synchronization {
 class Sender {
     public void send(String msg) {
         System.out.println("sending\t" + msg);
-        try {
-            Thread.sleep(2000);
-        } catch (Exception e) {
-            System.out.println("thread interrupted");
-        }
-        System.out.println("\n" + msg + "sent");
+//        try {
+//            Thread.sleep(2000);
+//        } catch (Exception e) {
+//            System.out.println("thread interrupted");
+//        }
+//        System.out.println("\n" + msg + "sent");
     }
 }
 

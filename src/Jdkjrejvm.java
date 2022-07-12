@@ -1,5 +1,5 @@
 public class Jdkjrejvm {
-    //JVM: Java virtual machine is an abstract machine. it is called a virtual machine because it doesn't physically exist.
+    // JVM: Java virtual machine is an abstract machine. it is called a virtual machine because it doesn't physically exist.
     // It is a specification that provides a runtime environment in which java byte code can be executed.
     // it can also run those programs which are writen in other languages and compiled to java bytecode.
     // JVM performs the following main tasks;
