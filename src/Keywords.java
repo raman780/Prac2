@@ -6,21 +6,21 @@
 // 2.the blank final variable can be static also which will be initialized in the static block only.
 
 //Final variable:
-class Em {
-    final int salaryLimit = 200000;//final varibale
-
-    void increase() {
-        salaryLimit = 250000;// it will throw error : Cannot assign a value to final variable 'salaryLimit'
-    }
-
-    public static void main(String[] args) {
-        Em obj = new Em();
-        obj.increase();
-    }
-}
+//class Em {
+//    final int salaryLimit = 200000;//final varibale
+//
+//    void increase() {
+//        salaryLimit = 250000;// it will throw error : Cannot assign a value to final variable 'salaryLimit'
+//    }
+//
+//    public static void main(String[] args) {
+//        Em obj = new Em();
+//        obj.increase();
+//    }
+//}
 
 //FInal method in Java
-class Em_1 {
+/*class Em_1 {
     final void increase() {
         System.out.println("Increasing");
     }
@@ -35,7 +35,7 @@ class Em_1 {
             intern.increase();
         }
     }
-}
+}*/
 
 //final class
 // if we make any class final, we cannot extend it.
@@ -43,6 +43,7 @@ class Em_1 {
 final class Em_2 {
 }
 
+/*
 class Em_3 extends Em_2 { // it will throw ct error : cannot inherit from final Em_2
     static void increase() {
         System.out.println("Salary is increasing quarterly");
@@ -53,6 +54,7 @@ class Em_3 extends Em_2 { // it will throw ct error : cannot inherit from final 
         Em_3.increase();
     }
 }
+*/
 
 
 //final method can be inherited but we can't override it.
@@ -202,7 +204,6 @@ class TestExpertise2 {
 }
 
 //3. super is used to invoke parent class constructor
-// the super keyword can also be used to invoke the parent class constructor.
 
 class Sparsh {
     Sparsh() {
@@ -227,5 +228,8 @@ class TestExpertise3 {
 
 //Advantage of static variable is makes program memory efficient
 public class Keywords {
+    public static void main(String[] args) {
+
+    }
 
 }

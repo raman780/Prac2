@@ -69,6 +69,7 @@ class FinallySh {
 // finally is the block in Exception Handling
 // finalize is the method of object class
 
+/*
 class Finalize {
     public static void main(String[] args) {
         Finalize obj = new Finalize();
@@ -81,12 +82,13 @@ class Finalize {
     }
 
     //defining the finalize method
-    protected void finalize
+    protected void finalize()
 
     {
         System.out.println("finalize method is called");
     }
 }
+*/
 
 // throwing an exception in java :
 //- In java, exception allows us to write good quality codes where the errors are checked at the compile time instead of runtime and we can create custom exceptions making the code recovery and debugging easier.
@@ -161,6 +163,19 @@ class ThrowException {
             //print the message from MyException Object
             System.out.println(sde.getMessage());
         }
+    }
+}
+
+class Error{
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        b = 20;
+
+        System.out.println(2);
+        for(int i =1 ; i<5; i++);
+        System.out.println(2*+1);
+
     }
 }
 
