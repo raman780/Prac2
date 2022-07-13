@@ -19,7 +19,7 @@
 //    }
 //}
 
-//FInal method in Java
+//Final method in Java
 /*class Em_1 {
     final void increase() {
         System.out.println("Increasing");
@@ -104,7 +104,7 @@ class Em_6 {
 
     class Em_7 {
         public static void main(String[] args) {
-            Em_6 e1 = new Em_6(274293, "raman", 50000f);
+            Em_6 e1 = new Em_6(274293, "Raman", 50000f);
             Em_6 e2 = new Em_6(274300, "Arihant", 50000f);
             e1.display();
             e2.display();
