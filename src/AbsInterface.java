@@ -59,7 +59,7 @@ public class AbsInterface {
 
  */
 
-abstract class Base {
+abstract class Bases {
     abstract void display();
 }
 

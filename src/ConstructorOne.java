@@ -16,8 +16,7 @@ public class ConstructorOne {
         age = a;
     }
 
-    public ConstructorOne(int i, String shiwam, int a) {
-    }
+
 
     public void display() {
         System.out.println(id + "" + name + "" + age);

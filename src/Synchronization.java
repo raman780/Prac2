@@ -1,8 +1,8 @@
 //Synchronization in Java is the capability to the control the access of multiple threads to any shared resource .
 //Java Synchronization is better option where we want to follow only one thread to access the shared res
 
-import java.io.*;
-import java.util.*;
+
+
 
 class Synchronization {
 

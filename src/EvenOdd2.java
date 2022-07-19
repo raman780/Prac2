@@ -1,4 +1,4 @@
-//public class EvenOdd {
+//public class EvenOddProgram {
 //    public static void main(String[] args){
 //        //creating Scanner class object
 //        Scanner scan = new Scanner(System.in);
@@ -9,8 +9,7 @@
 //        Pra3.findEvenOdd(num);
 //    }
 //}
-
-public class EvenOdd {
+class EvenOdd {
     public static void main(String[] args) {
 
     }

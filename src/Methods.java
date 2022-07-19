@@ -24,7 +24,7 @@ import java.util.Scanner;
 public class Methods {
 }
 
-class EvenOdd {
+class EvenOddProgram {
     public static void main(String[] args) {
         //scanner class object
         Scanner scan = new Scanner(System.in);

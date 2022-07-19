@@ -190,8 +190,5 @@ class main{
         catch (Base b){
             System.out.println("caught base class exception");
         }
-        catch (Derived d){
-            System.out.println("caught derived class exception");
-        }
     }
 }
