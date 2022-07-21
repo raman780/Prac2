@@ -1,3 +1,5 @@
+
+
 //1st class
 class SingletonClass {
     //static variable refrence of single_instance of type Singleton
@@ -47,6 +49,29 @@ class Single {
             //print statement
             System.out.println("Theree objects don't point to the memory location on the heap");
         }
+    }
+}
+
+class SingleMingle{
+    public static SingleMingle singleton_instance = null;
+    private SingleMingle(){
+        connection();
+    }
+
+    public static SingleMingle getInstance(){
+        if(singleton_instance ==null){
+            singleton_instance = new SingleMingle();
+        }
+        return singleton_instance;
+    }
+
+    private void connection() {
+        System.out.println("Connected");
+    }
+
+    public static void main(String[] args) {
+        SingleMingle s;
+        s = SingleMingle.getInstance();
     }
 }
 
