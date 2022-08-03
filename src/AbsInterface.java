@@ -73,6 +73,6 @@ class JavaApp {
     public static void main(String[] args) {
         ConcreteClass C = new ConcreteClass();
         C.display();
-        System.out.println("HHHHHHHHHHHH");
+
     }
 }
