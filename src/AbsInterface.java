@@ -67,12 +67,4 @@ class ConcreteClass extends Base {
     void display() {
         System.out.println("Hi....");
     }
-}
 
-class JavaApp {
-    public static void main(String[] args) {
-        ConcreteClass C = new ConcreteClass();
-        C.display();
-      
-    }
-}
